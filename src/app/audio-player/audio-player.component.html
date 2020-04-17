@@ -1,0 +1,17 @@
+<div class="media-player">
+  <img class="cover" src="{{episode.image}}" alt="{{episode.title}}">
+  <h2>{{episode.title}}</h2>
+
+
+  <button *ngIf="isPlaying" (click)="pause()" class="icon pause" aria-label="pause" [inlineSVG]="'/assets/pause.svg'">
+  </button>
+
+  <button *ngIf="!isPlaying" (click)="play()" class="icon play" aria-label="play" [inlineSVG]="'/assets/play.svg'">
+  </button>
+
+  <audio #mediaPlayer>
+    <source src="{{episode.audioOgg}}" type="audio/ogg">
+      <source src="{{episode.audioMp3}}" type="audio/mpeg">
+        Your browser does not support the audio element.
+  </audio>
+</div>

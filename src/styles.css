@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --bg-01: #f4f4f4;
+  --bg-02: #ffffff;
+  --fg: #000000;
+  --hl: #fdd000;
+
+  --font: "Barlow", sans-serif;
+
+  --max-width: 700px;
+
+  --margin-q: calc(var(--margin-01) / 4);
+  --margin-h: calc(var(--margin-01) / 2);
+  --margin-01: 8px;
+  --margin-02: calc(var(--margin-01) * 2);
+  --margin-03: calc(var(--margin-01) * 3);
+  --margin-04: calc(var(--margin-01) * 4);
+  --margin-05: calc(var(--margin-01) * 5);
+  --margin-06: calc(var(--margin-01) * 6);
+  --margin-07: calc(var(--margin-01) * 7);
+  --margin-08: calc(var(--margin-01) * 8);
+  --margin-09: calc(var(--margin-01) * 9);
+  --margin-10: calc(var(--margin-01) * 10);
+}
+
+.light-mode {
+  --bg: #ede8dd;
+  --fg: #1a1919;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--bg-01);
+  color: var(--fg);
+}
+
+h1,
+h2 {
+  font-weight: 600;
+}
+
+.wrapper {
+  max-width: var(--max-width);
+  padding-right: var(--margin-02);
+  padding-left: var(--margin-02);
+  width: 100%;
+  margin: auto;
+}
+
+button svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}

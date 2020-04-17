@@ -1,0 +1,38 @@
+:host.active .episode-item {
+  background: var(--hl);
+}
+
+.episode-item {
+  cursor: pointer;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid var(--fg);
+  background: var(--bg-02);
+}
+
+.episode-item:not(:last-child) {
+}
+
+.episode-item h2 {
+  flex: 1 0 auto;
+  margin: 0;
+  margin-right: var(--margin-02);
+}
+
+.episode-number {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  height: 100%;
+  width: 60px;
+  background: var(--hl);
+  margin-right: var(--margin-02);
+  padding: var(--margin-01);
+  font-size: 1.5em;
+}
+
+.episode-duration {
+  margin: 0;
+  padding: var(--margin-01);
+}

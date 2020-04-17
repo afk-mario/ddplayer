@@ -1,0 +1,11 @@
+.episode-list {
+  margin-top: var(--margin-06);
+  margin-bottom: var(--margin-06);
+}
+
+.episode-list .wrapper {
+}
+
+:host ::ng-deep app-episode-item {
+  background: orange;
+}

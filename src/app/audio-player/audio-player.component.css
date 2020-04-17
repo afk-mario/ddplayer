@@ -1,0 +1,42 @@
+.media-player {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-start;
+  background: var(--bg-02);
+  margin-bottom: var(--margin-04);
+}
+
+.media-player h2 {
+}
+
+.media-player .cover {
+  display: block;
+  flex: 0 1 200px;
+  margin-right: var(--margin-02);
+  border-right: 2px solid var(--fg);
+}
+
+.media-player button {
+  self-align: flex-end;
+  appearance: none;
+  border: none;
+  border-radius: 50%;
+  background: var(--hl);
+  height: 60px;
+  width: 60px;
+  padding: var(--margin-01);
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right: var(--margin-01);
+  margin-bottom: var(--margin-01);
+  cursor: pointer;
+  color: var(--fg);
+  transition: transform 0.2s ease;
+}
+
+.media-player button:hover {
+  transform: translateY(-4px);
+}

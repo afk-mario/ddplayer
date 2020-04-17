@@ -1,0 +1,21 @@
+<section class="episode-list">
+  <div class="wrapper">
+    <div *ngIf="loading">
+      Loading...
+    </div>
+    <div *ngIf="error">
+      Error :(
+    </div>
+
+    <div *ngIf="active">
+      <app-audio-player  [episode]="active.node"></app-audio-player>
+    </div>
+
+    <div *ngIf="episodes">
+      <div *ngFor="let episode of episodes" (click)="setActive($event, episode)">
+        <app-episode-item [episode]="episode.node"[ngClass]="active != null && active.node.slug === episode.node.slug ? 'active' : ''"></app-episode-item>
+      </div>
+    </div>
+
+  </div>
+</section>
