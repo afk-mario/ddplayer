@@ -3,8 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyB3rvCkI-8YymtHAy_k8XHOH8GvVyNqO7I',
+    authDomain: 'ddplayer-afk.firebaseapp.com',
+    databaseURL: 'https://ddplayer-afk.firebaseio.com',
+    projectId: 'ddplayer-afk',
+    storageBucket: 'ddplayer-afk.appspot.com',
+    messagingSenderId: '631215225802'
+  }
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file

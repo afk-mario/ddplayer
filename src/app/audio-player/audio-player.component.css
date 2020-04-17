@@ -9,34 +9,32 @@
   margin-bottom: var(--margin-04);
 }
 
-.media-player h2 {
+.media-player .rich-text {
+  flex: 1 1 auto;
+  margin-right: var(--margin-02);
 }
 
 .media-player .cover {
+  min-height: 100px;
+  background: var(--bg-01);
+  display: flex;
+  flex-flow: row;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
   display: block;
-  flex: 0 1 200px;
+  flex: 0 0 200px;
   margin-right: var(--margin-02);
   border-right: 2px solid var(--fg);
 }
 
 .media-player button {
-  self-align: flex-end;
-  appearance: none;
-  border: none;
-  border-radius: 50%;
   background: var(--hl);
-  height: 60px;
-  width: 60px;
-  padding: var(--margin-01);
   align-self: flex-end;
   margin-left: auto;
   margin-right: var(--margin-01);
   margin-bottom: var(--margin-01);
-  cursor: pointer;
   color: var(--fg);
-  transition: transform 0.2s ease;
-}
-
-.media-player button:hover {
-  transform: translateY(-4px);
+  flex: 0 0 auto;
 }

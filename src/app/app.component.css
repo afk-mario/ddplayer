@@ -3,3 +3,35 @@
   padding-top: var(--margin-02);
   padding-bottom: var(--margin-02);
 }
+
+#header .wrapper {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header button {
+  border: 2px solid var(--fg);
+  background: var(--bg-02);
+}
+
+#header .user {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header .user h1 {
+  margin-right: var(--margin-01);
+}
+
+#header a {
+  color: var(--fg);
+  text-decoration: none;
+}
+
+#header a:hover {
+  text-decoration: underline;
+}

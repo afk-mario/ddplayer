@@ -5,7 +5,3 @@
 
 .episode-list .wrapper {
 }
-
-:host ::ng-deep app-episode-item {
-  background: orange;
-}

@@ -1,0 +1,29 @@
+<div *ngIf="auth.user | async as user; else showLoading" class="user">
+  <section class="profile">
+    <div class="wrapper info-box">
+      <div class="rich-text">
+        <p>Hey {{user.displayName}}!</p>
+        <p>We may send you span at {{user.email}}</p>
+        <p>Don't worry, we also know where you may live...</p>
+      </div>
+
+      <div class="watching">
+        <div class="icon eye" aria-label="we-are-watching-you" [inlineSVG]="'/assets/eye.svg'"></div>
+        <div class="icon eye" aria-label="we-are-watching-you" [inlineSVG]="'/assets/eye.svg'"></div>
+      </div>
+    </div>
+
+    <div class="wrapper -map">
+      <agm-map [latitude]="lat" [longitude]="lng"></agm-map>
+    </div>
+  </section>
+</div>
+
+
+<ng-template #showLoading>
+  <section class="profile">
+    <div class="wrapper" >
+      <span>Loading...</span>
+    </div>
+  </section>
+</ng-template>

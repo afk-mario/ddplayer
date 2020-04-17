@@ -1,10 +1,19 @@
 <header id="header">
   <div class="wrapper">
-    <h1>DDPlayer</h1>
+    <a routerLink="/"><h1>DDPlayer</h1></a>
+    <div *ngIf="auth.user | async as user; else showLogin" class="user">
+      <a routerLink="/user"><h1>{{ user.displayName }}</h1></a>
+      <button (click)="logout()" class="icon logout" aria-label="logout" [inlineSVG]="'/assets/logout.svg'"></button>
+    </div>
   </div>
 </header>
 
+<ng-template #showLogin>
+  <div class="user">
+    <h1>Login</h1>
+    <button (click)="login()" class="icon login" aria-label="login" [inlineSVG]="'/assets/login.svg'"></button>
+  </div>
+</ng-template>
 
-<app-episode-list></app-episode-list>
 
 <router-outlet></router-outlet>

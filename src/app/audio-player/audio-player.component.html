@@ -1,6 +1,9 @@
 <div class="media-player">
   <img class="cover" src="{{episode.image}}" alt="{{episode.title}}">
-  <h2>{{episode.title}}</h2>
+  <div class="rich-text">
+    <h2>{{episode.title}}</h2>
+    <p>{{episode.smallText}}</p>
+  </div>
 
 
   <button *ngIf="isPlaying" (click)="pause()" class="icon pause" aria-label="pause" [inlineSVG]="'/assets/pause.svg'">
