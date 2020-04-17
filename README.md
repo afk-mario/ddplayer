@@ -2,7 +2,7 @@
 <h1>DDPlayer</h1>
 
 <a href="https://ddplayer.netlify.app/">
-<img height="100" width="auto" alt="c&c" src="https://ddplayer.netlify.app/preview.png" />
+<img height="100" width="auto" alt="DDPlayer" src="https://ddplayer.netlify.app/assets/preview.png" />
 </a>
 <br/>
 <p>A web player for a podcast</p>
