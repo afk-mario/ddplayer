@@ -38,3 +38,24 @@
   color: var(--fg);
   flex: 0 0 auto;
 }
+
+@media screen and (max-width: 700px) {
+  .media-player {
+    flex-flow: column;
+  }
+
+  .media-player .cover {
+    width: 100%;
+    height: auto;
+    border: none;
+    display: block;
+    margin: 0;
+    flex: 1 1 auto;
+  }
+
+  .media-player .rich-text {
+    margin-right: 0;
+    width: 100%;
+    padding: var(--margin-02);
+  }
+}
